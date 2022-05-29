@@ -27,7 +27,7 @@ const Form = () => {
         if(!validName.test(name)){
             setNameErr(true)
         }
-        if(confirmPassword != password){
+        if(confirmPassword !== password){
             setConfirmPasswordErr(true)
         }
     }
