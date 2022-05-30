@@ -8,7 +8,6 @@ const BarChart = () => {
         const newNumber = Math.random() * 10;
         data.push(newNumber)
     }
-console.log(data)
 
 useEffect(() => {
     const svg = d3.select('.canvas').selectAll('div')
