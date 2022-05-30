@@ -1,15 +1,15 @@
-import calender from './calender.svg';
-import Form from './components/Form';
-import './css/App.css';
+import BarChart from './components/BarChart'
+import Login from './components/Login'
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div className='Home-page'>
-      <div className='Container'>
-        <img src={calender} alt='logo' className='Calender'></img>
-        <Form/>
-      </div>
-    </div>
+    <Router>
+        <Routes>
+        <Route path='/' element={<Login/>}/>
+        <Route path='/bar-chart' element={<BarChart/>}/>
+        </Routes>
+    </Router>
   );
 }
 
