@@ -10,6 +10,9 @@
   height: 10px;
   margin-top: 80px;
   margin-right: 5px;
-  background-color: teal;
+  background-color: #757680;
+  -webkit-box-shadow: 3px 3px 5px #aaaaaa;
+          box-shadow: 3px 3px 5px #aaaaaa;
+  border-radius: 3px;
 }
 /*# sourceMappingURL=BarChart.css.map */

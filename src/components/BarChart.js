@@ -1,9 +1,12 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useMemo } from 'react'
 import * as d3 from 'd3'
 import '../css/BarChart.css'
 const BarChart = () => {
 
-    let data =[];
+    let data = useMemo(() => {
+        return [];
+        
+    }, []);
     for (let i = 0; i < 15; i++) {
         const newNumber = Math.random() * 10;
         data.push(newNumber)
@@ -22,7 +25,10 @@ useEffect(() => {
 }, [data])
 
     return (
+        <div>
+        <h1 style={{textAlign: "center", fontSize: "2.7rem"}}>Bar Chart</h1>
         <div className='canvas'></div>
+        </div>
     )
 }
 
